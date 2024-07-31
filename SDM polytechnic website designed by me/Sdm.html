@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDM Polytechnic</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .wave {
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(1);
+            }
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1300px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-container {
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: rgb(34, 172, 89);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(28, 145, 75);
+        }
+
+        marquee {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <header>
+        <img src="photos/Color-Logo.png" alt="SDM Polytechnic Logo">
+        <h1>Sri Dharmasthala Manjunatheshwara Polytechnic College</h1>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Department.html">Department</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <img src="photos/poly.jpg" alt="SDM Polytechnic" style="width:100%; height:auto; border-radius: 10px;">
+        <h2> SDM Polytechnic</h2>
+        <p>
+            SDM Polytechnic was established in the year 2008 and is managed by SDM Educational Society – Ujire.
+            The institution offers 3 years 6 Semester Diploma courses in the disciplines of Civil Engineering, Computer Science, Electronics & Communication Engineering, and Mechanical Engineering.
+            Since its establishment, the management has taken huge strides towards enhancing excellence in all spheres of education.
+            We are consistently exerting efforts to develop quality of education including appropriate attitude, behavior, technical, and non-technical competencies.
+            Constant upgrading of the facilities from lab to library is made. We have a team of highly qualified, dedicated, and distinguished faculty.
+            Ample opportunities are being provided to the students to take part in curricular, co-curricular, and sports activities.
+        </p>
+        
+        <div class="btn-container">
+            <a href="Photo.html" class="btn">Photo Gallery</a>
+            <a href="https://app.sdmes.in/EERPV3.0/EAM/login.jsp?ConsID=SDMTI" class="btn">Student Space</a>
+            <a href="aboutus.html" class="btn">About Us</a>
+        </div>
+
+        
+    </main>
+
+</body>
+</html>

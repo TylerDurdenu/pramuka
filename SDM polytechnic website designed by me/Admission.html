@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDM Polytechnic</title>
+    <style>
+        body {
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow: auto;
+            background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .wave {
+            background: rgb(255 255 255 / 25%);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(1);
+            }
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: white;
+        }
+
+        nav {
+            
+            background:rgba(0, 0, 0, 0.6);
+            padding: 10px;
+
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #h1 {
+            border: 3px solid black;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h3 a {
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        h3 a:hover {
+            background-color: rgba(200, 200, 200, 0.8);
+        }
+
+        img {
+            width: 250px;
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+        #d2 {
+            height: 100px;
+            width: 100px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <center><img id="d2" src="photos/Color-Logo.png" alt="SDM Polytechnic Logo" /></center
+    <h1><b>SDM Polytechnic</b></h1>
+    <nav>
+        <center>
+            <a href="Home.html">Home</a>
+            <a href="Department.html">Department</a>
+            <a href="Admission.html">Admission</a>
+            <a href="Contact.html">Contact</a>
+        </center>
+        </nav>
+    <img src="photos/bg4.png" alt="SDM Polytechnic">
+    <h3 id="h1">
+        <b>We offer 3-year Diploma Courses for the following Departments:</b><br><br>
+        <b>Computer Science Engineering: 60 Seats</b><br>
+        <b>Electronics & Communication Engineering: 60 Seats</b><br>
+        <b>Mechanical Engineering: 60 Seats</b><br>
+        <b>Civil Engineering: 60 Seats</b><br><br>
+        <b>Eligibility Criteria:</b><br>
+        - Should have passed SSLC<br>
+        - Should have studied in Karnataka for at least 5 years, or else obtain an Eligibility Certificate from DTE, Bangalore for Non-Karnataka students/SSLC other than State Board<br>
+        <b>Lateral Entry to II Year:</b><br>
+        - For ITI Students (2 years trade)<br>
+        - Students Passed in PUC with Science<br>
+    </h3>
+    <h3><b><a href="form.html">Registrataion Form</a></b></h3>
+    <p>hello from me</p>
+</body>
+</html>
